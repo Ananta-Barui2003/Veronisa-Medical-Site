@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #252524;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.81;
+    margin: 0;
+    padding: 0;
+}
+.h0 span,.h1 span,.h2 span,.h3 span,.h4 span,.h5 span,h1 span,h2 span,h3 span,h4 span,h5 span,.h0 i,.h1 i,.h2 i,.h3 i,.h4 i,.h5 i,h1 i,h2 i,h3 i,h4 i,h5 i,.h0 em,.h1 em,.h2 em,.h3 em,.h4 em,.h5 em,h1 em,h2 em,h3 em,h4 em,h5 em {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;  
+}
+
+h1, h2, h3, h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Signika', sans-serif;
+}
+
+img {
+display: inherit;
+}
+
+p{
+	margin:0 0 15px 0;
+    font-family: 'Fahkwang', sans-serif;
+}
+p:last-child{
+	margin-bottom:0;
+}
+p:empty{
+	display:none;
+}
+
+:focus{
+    outline:none !important;
+    box-shadow:none !important;
+}
+
+.container{
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ================================header css start================================== */
+.header{
+    padding: 30px 0;
+}
+.header .header_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .header_wrap .logo {
+    max-width: 165px;
+}
+.header .header_wrap .logo a {
+    display: block;
+}
+.header .header_wrap .logo img{
+    width: 100%;
+}
+.header .header_wrap .menu .menu_wrap {
+    padding: 0;
+    margin: 0;
+}
+.header .header_wrap .menu .menu_wrap li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+}
+.header .header_wrap .menu .menu_wrap li:last-child {
+    padding-right: 0;
+}
+.header .header_wrap .menu .menu_wrap li:last-child a {
+    color: #fff;
+    background-color: #8BDCD9;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.30s ease-in-out;
+}
+.header .header_wrap .menu .menu_wrap li:last-child a:hover{
+    background-color: #81cbc8;
+}
+.header .header_wrap .menu .menu_wrap li:nth-child(5) {
+    padding: 0;
+    padding-right: 30px;
+}
+.header .header_wrap .menu .menu_wrap li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #8D96A2;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.header .header_wrap .menu .menu_wrap .active a {
+    color: #9068BE;
+}
+
+/* ================================header css end================================== */
+
+/* ===============================baner css start============================ */
+
+.baner{
+    position: relative;
+    background-image: url(../images/banner1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+.baner::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: #092d3bb1;
+}
+.baner .baner_cont {
+    z-index: 1;
+    position: relative;
+}
+
+/* ============= baner slider start============ */
+.banner-main .prev-arrow {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #7b5fa967;
+    border-radius: 5px;
+    color: #ffffff69;
+    border: none;
+    transition: all 0.45s ease-in-out;
+}
+.banner-main .prev-arrow:hover {
+    background-color: #7B5FA9;
+    color: #fff;
+}
+
+.banner-main .next-arrow {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #7b5fa967;
+    border-radius: 5px;
+    color: #ffffff69;
+    border: none;
+    transition: all 0.45s ease-in-out;
+}
+.banner-main .next-arrow:hover {
+    background-color: #7B5FA9;
+    color: #fff;
+}
+
+
+.banner-main {
+    overflow: hidden;
+}
+.banner-main:hover .next-arrow {
+    right: 20px;
+}
+.banner-main:hover .prev-arrow {
+    left: 20px;
+}
+/* ============= baner slider end============ */
+
+.baner .baner_cont h1 {
+    font-size: 50px;
+    color: #fff;
+    line-height: 80px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.baner .baner_cont h4 {
+    font-size: 22px;
+    color: #aeb3b5;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.baner .baner_cont span {
+    display: block;
+}
+.baner .baner_cont a {
+    display: inline-block;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #bbbbbb;
+    color: #e4e4e4;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #71b8b5;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.30s ease-in-out;
+}
+.baner .baner_cont a:hover {
+    background-color: #7ac6c2;
+}
+.baner .baner_cont a:last-child {
+    background-color: #9068BE;
+    padding: 10px 30px;
+}
+.baner .baner_cont a:last-child:hover {
+    background-color: #a074d3;
+}
+
+
+/* ===============================baner css end============================ */
+
+/* ============================anousbar css start========================= */
+
+.anous_bar {
+    background-color: #9068BE;
+    padding: 30px 0;
+}
+.anous_bar .ans_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.anous_bar .ans_wrap .text h4 {
+    margin: 0;
+    font-size: 22px;
+    color: #fff;
+    line-height: 30px;
+}
+.anous_bar .ans_wrap .tody_btn a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #70cecb;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px #bbbbbb;
+    transition: all 0.30s ease-in-out;
+}
+.anous_bar .ans_wrap .tody_btn a:hover {
+    background-color: #8ae3e0;
+    color: #fff;
+}
+
+/* ============================anousbar css end========================= */
+
+/* ======================physio_service css start============================= */
+
+.physio_service{
+    margin: 100px 0;
+}
+.physio_service .physio_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.physio_service .physio_wrap .box_1 {
+    width: 33.333%;
+    padding: 0 15px;
+}
+.physio_service .physio_wrap .box_1 .box1_cont {
+    border: 4px solid #cfcfcfd1;
+    padding: 40px;
+}
+.physio_service .physio_wrap .box_1 .box1_cont h2 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.physio_service .physio_wrap .box_1 .box1_cont p {
+    margin: 0;
+    color: #a2a2a2;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.physio_service .physio_wrap .box_1 .box1_cont a {
+    text-decoration: none;
+    display: inline-block;
+    color: #9068BE;
+    font-weight: bold;
+}
+
+
+.physio_service .physio_wrap .box {
+    width: 33.333%;
+    padding: 0 15px;
+}
+.physio_service .physio_wrap .box:last-child {
+    padding: 0;
+    padding-left: 15px;
+}
+.physio_service .physio_wrap .box .pys_img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.physio_service .physio_wrap .box .pys_cont{
+    padding: 30px;
+}
+.physio_service .physio_wrap .box .pys_cont h4 {
+    font-size: 22px;
+    color: #000;
+    margin: 0;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.physio_service .physio_wrap .box .pys_cont p {
+    font-size: 15px;
+    color: #a2a2a2;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.physio_service .physio_wrap .box .pys_cont a {
+    text-decoration: none;
+    display: inline-block;
+    color: #9068BE;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* ======================physio_service css end============================= */
+
+
+.why_vernca {
+    background-color: #E5F0FB;
+    padding: 100px 0;
+}
+.why_vernca h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 80px;
+    position: relative;
+}
+.why_vernca h1::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -25px;
+    width: 70px;
+    height: 4px;
+    background: #9068BE;
+    border-radius: 3px;
+    transform: translate(-50%, 0);
+}
+.why_vernca .wraper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin: 0 -15px;
+}
+
+.why_vernca .wraper .part {
+    width: 33.333%;
+    padding: 0 15px;
+}
+
+.why_vernca .wraper .part .box {
+    padding: 50px;
+    box-shadow: 0 0 30px #dfdfdf99;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.why_vernca .wraper .part .box i{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #9068BE;
+}
+.why_vernca .wraper .part .box h4 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.why_vernca .wraper .part .box p {
+    margin: 0;
+    font-size: 15px;
+    color: #888888;
+}
+
+/* ========================customar slider css start========================*/
+.customer_slider {
+    margin: 100px 0 150px;
+}
+.customer_slider h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 80px;
+    position: relative;
+}
+.customer_slider h1::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -30px;
+    width: 70px;
+    height: 4px;
+    background: #9068BE;
+    border-radius: 3px;
+    transform: translate(-50%, 0);
+}
+.customer_slider .slider_wrap {
+    margin: 0 -15px;
+}
+.customer_slider .slider_wrap .sald_cont {
+    text-align: center;
+    padding: 0 15px;
+}
+.customer_slider .slider_wrap .sald_cont i {
+    font-size: 30px;
+    color: #9068BE;
+    margin-bottom: 20px;
+}
+.customer_slider .slider_wrap .sald_cont h4 {
+    font-size: 16px;
+    color: #939393;
+    margin: 0;
+    line-height: 30px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.customer_slider .slider_wrap .sald_cont h5 {
+    font-size: 15px;
+    margin: 0;
+    color: #3f3f3f;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.customer_slider .slider_wrap .sald_cont p {
+    font-size: 12px;
+    font-style: italic;
+    color: #8D96A2;
+    margin: 0;
+}
+.customer_slider .slider_wrap .prev-arrow, .customer_slider .slider_wrap .next-arrow {
+    width: 40px;
+    height: 40px;
+    background: #9068BE;
+    color: #ffffffd1;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    bottom: -70px;
+}
+.customer_slider .slider_wrap .prev-arrow {
+    left: 50%;
+    transform: translateX(-50px);
+}
+.customer_slider .slider_wrap .next-arrow {
+    right: 50%;
+    transform: translateX(50px);
+}
+
+
+.slider_wrap .slick-prev::before {
+    content: "\f0d9";
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    line-height: normal;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider_wrap .slick-prev {
+    width: 35px;
+    height: 35px;
+    background: #9068be6d;
+    border-radius: 5px;
+    transition: all 0.45s ease-in-out;
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    bottom: -110px;
+    top: auto;
+    left: 46.5%;
+    transform: translate(-50%, -50%);
+}
+.slider_wrap .slick-next {
+    width: 35px;
+    height: 35px;
+    background: #9068be6d;
+    border-radius: 5px;
+    transition: all 0.45s ease-in-out;
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    top: auto;
+    bottom: -110px;
+    right: 46.5%;
+    transform: translate(-50%, -50%);
+}
+.slider_wrap .slick-next:hover {
+    background: #9068be;
+}
+.slider_wrap .slick-prev:hover {
+    background: #9068be;
+}
+.slider_wrap .slick-next.slick-disabled::before, .slider_wrap .slick-prev.slick-disabled::before {
+    opacity: 1;
+}
+.slider_wrap .slick-next::before {
+    content: "\f0da";
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    line-height: normal;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider_wrap .slick-next:focus, .slider_wrap .slick-prev:focus{
+    display: none;
+}
+/* ========================customar slider css end========================*/
+
+
+/* =================== therapists css start ============================*/
+.therapists {
+    background-color: #E5F0FB;
+    padding: 100px 0;
+}
+.therapists h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 80px;
+    position: relative;
+}
+.therapists h1::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -30px;
+    width: 70px;
+    height: 4px;
+    background: #9068BE;
+    border-radius: 3px;
+    transform: translate(-50%, 0);
+}
+.therapists .wraper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.therapists .wraper .box {
+    width: 33.33%;
+    padding: 0 10px;
+    
+}
+.therapists .wraper .box .item {
+    background-color: #fff;
+    box-shadow: 0 0 10px #dbdbdb;
+    border-radius: 5px;
+}
+.therapists .wraper .box .image img {
+    width: 100%;
+    border-radius: 4px;
+    transition: 0.45s ease-in-out;
+}
+.therapists .wraper .box .image:hover img{
+    transform: scale(1.03);
+}
+.therapists .wraper .box .image {
+    overflow: hidden;
+    position: relative;
+    transition: all 0.45s ease-in-out;
+}
+.therapists .wraper .box .image:hover::before {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+.therapists .wraper .box .image::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000005b;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.therapists .wraper .box .cont {
+    padding: 40px;
+}
+.therapists .wraper .box .cont h3 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.therapists .wraper .box .cont h3 a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.45s ease-in-out;
+}
+.therapists .wraper .box .cont h3 a:hover {
+    color: #9068BE;
+}
+
+.therapists .wraper .box .cont h5 {
+    font-size: 12px;
+    margin: 0;
+    color: #70cecb;
+    line-height: 15px;
+    margin-bottom: 20px;
+}
+.therapists .wraper .box .cont p {
+    color: #9a9a9a;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.therapists .wraper .box .cont .icon a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background-color: #9068BE;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+}
+.therapists .wraper .box .cont .icon a:hover{
+    background-color: #70cecb;
+}
+
+/* =================== therapists css end ============================*/
+
+
+/* ========================= Physiotherapy News css start========================= */
+
+.news {
+    margin: 100px 0;
+}
+.news h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 80px;
+    position: relative;
+}
+.news h1::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -30px;
+    width: 70px;
+    height: 4px;
+    background: #9068BE;
+    border-radius: 3px;
+    transform: translate(-50%, 0);
+}
+.news .news_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.news .news_wrap .news_box {
+    width: 33.333%;
+    padding: 0 15px;
+}
+.news .news_wrap .news_box .news_img img{
+    width: 100%;
+}
+
+.news .news_wrap .news_box .news_cont {
+    padding: 40px;
+}
+.news .news_wrap .news_box .news_cont h4 {
+    font-size: 14px;
+    color: #70cecb;
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.news .news_wrap .news_box .news_cont h3 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.news .news_wrap .news_box .news_cont h3 a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.45s ease-in-out;
+}
+.news .news_wrap .news_box .news_cont h3 a:hover {
+    color: #9068BE;
+}
+.news .news_wrap .news_box .news_cont p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #919191;
+}
+.news .news_wrap .news_box .news_cont .rd_btn {
+    text-decoration: none;
+    color: #9068BE;
+    font-weight: bold;
+    transition: all 0.45s ease-in-out;
+}
+.news .news_wrap .news_box .news_cont .rd_btn:hover {
+    color: #000;
+}
+
+
+/* ========================= Physiotherapy News css end========================= */
+
+.footer {
+    background-color: #263C53;
+    padding: 80px 0;
+}
+
+.footer .footer_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    margin: 0 -15px;
+}
+.footer .footer_wrap .fot_box {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer .footer_wrap .fot_box .logo {
+    max-width: 165px;
+}
+.footer .footer_wrap .fot_box .logo a {
+    display: block;
+}
+.footer .footer_wrap .fot_box .logo img {
+    width: 100%;
+}
+
+.footer .footer_wrap .fot_box p {
+    margin: 0;
+    font-size: 15px;
+    color: #fff;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.footer .footer_wrap .fot_box h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.footer .footer_wrap .fot_box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer .footer_wrap .fot_box ul li {
+    margin-bottom: 10px;
+}
+.footer .footer_wrap .fot_box ul li:last-child {
+    margin-bottom: 0;
+}
+.footer .footer_wrap .fot_box ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.45s ease-in-out;
+}
+.footer .footer_wrap .fot_box ul li a:hover {
+    color: #7B5FA9;
+}
+
+.footer .footer_wrap .fot_box .ftr_icon {
+    display: flex;
+    margin-top: 20px;
+}
+.footer .footer_wrap .fot_box .ftr_icon a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #7B5FA9;
+    border-radius: 5px;
+    transition: all 0.45s ease-in-out;
+    margin-left: 5px;
+}
+.footer .footer_wrap .fot_box .ftr_icon a:first-child {
+    margin-left: 0;
+}
+.footer .footer_wrap .fot_box .ftr_icon a:hover {
+    background-color: #70cecb;
+}
+.footer .footer_wrap .fot_box .ftr_icon a:first-child {
+    padding: 5px 15px;
+}
+
+.footer .copy_right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer .copy_right p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 15px;
+    line-height: 26px;
+}

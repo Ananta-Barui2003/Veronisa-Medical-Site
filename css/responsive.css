@@ -1,0 +1,324 @@
+/* ==========================1024px start====================== */
+@media only screen and (max-width: 1024px) {
+    .baner {
+        padding: 160px 0;
+    }
+    .physio_service .physio_wrap .box_1 .box1_cont {
+        padding: 15px;
+    }
+    .physio_service .physio_wrap .box .pys_cont {
+        padding: 25px 25px 0;
+    }
+    .therapists .wraper .box .cont {
+        padding: 25px;
+    }
+    .news .news_wrap .news_box .news_cont {
+        padding: 25px;
+    }
+/* ==========================1024px end====================== */ 
+}
+
+/* ==========================991px start====================== */
+@media only screen and (max-width: 991px) {
+    .header {
+        padding: 20px 0;
+    }
+    .baner {
+        padding: 100px 0;
+    }
+    .baner .baner_cont h1 {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+    .baner .baner_cont h4 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .banner-main .prev-arrow {
+        left: 48%;
+        bottom: 15px;
+        top: inherit;
+        transform: translateX(-40px);
+    }
+    .banner-main:hover .prev-arrow {
+        left: 48%;
+    }
+    .banner-main .next-arrow {
+        right: 48%;
+        top: inherit;
+        bottom: 15px;
+        transform: translateX(40px);
+    }
+    .banner-main:hover .next-arrow {
+        right: 48%;
+    }
+    .anous_bar {
+        padding: 20px 0;
+    }
+    .anous_bar .ans_wrap .text h4 {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .anous_bar .ans_wrap .tody_btn a {
+        padding: 10px 30px;
+    }
+    .physio_service {
+        margin: 45px 0;
+    }
+    .physio_service .physio_wrap {
+        row-gap: 30px;
+    }
+    .physio_service .physio_wrap .box_1 {
+        width: 100%;
+        text-align: center;
+    }
+    .physio_service .physio_wrap .box {
+        width: 50%;
+    }
+    .physio_service .physio_wrap .box_1 .box1_cont h2 {
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .physio_service .physio_wrap .box_1 .box1_cont p {
+        line-height: 1.4;
+    }
+    .physio_service .physio_wrap .box .pys_cont h4 {
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .why_vernca {
+        padding: 45px 0;
+    }
+    .why_vernca h1 {
+        line-height: 1.2;
+        margin-bottom: 50px;
+    }
+    .why_vernca h1::before {
+        bottom: -15px;
+    }
+    .why_vernca .wraper .part .box {
+        padding: 15px;
+    }
+    .why_vernca .wraper .part .box i {
+        font-size: 35px;    
+    }
+    .why_vernca .wraper .part .box p {
+        line-height: 1.4;
+    }
+    .customer_slider {
+        margin: 45px 0 70px;
+    }
+    .customer_slider h1 {
+        line-height: 1.2;
+        margin-bottom: 65px;
+    }
+    .customer_slider h1::before {
+        bottom: -15px;
+    }
+    .customer_slider .slider_wrap .prev-arrow, .customer_slider .slider_wrap .next-arrow {
+        bottom: -55px;
+    }
+    .customer_slider .slider_wrap .sald_cont h4 {
+        line-height: 1.6;
+    }
+    .customer_slider .slider_wrap .sald_cont h5 {
+        margin-bottom: 4px;
+    }
+    .therapists {
+        padding: 45px 0;
+    }
+    .therapists h1 {
+        line-height: 1.2;
+        margin-bottom: 50px;
+    }
+    .therapists h1::before {
+        bottom: -15px;
+    }
+    .therapists .wraper .box .cont {
+        padding: 15px;
+    }
+    .therapists .wraper .box .cont p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .news {
+        margin: 45px 0;
+    }
+    .news h1 {
+        line-height: 1.2;
+        margin-bottom: 50px;
+    }
+    .news h1::before {
+        bottom: -15px;
+    }
+    .news .news_wrap {
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .news .news_wrap .news_box {
+        width: 50%;
+    }
+    .news .news_wrap .news_box .news_cont {
+        padding: 15px;
+    }
+    .news .news_wrap .news_box .news_cont h3 {
+        margin-bottom: 15px;
+    }
+    .news .news_wrap .news_box .news_cont p {
+        line-height: 1.4;
+    }
+    .footer {
+        padding: 45px 0;
+    }
+    .footer .footer_wrap {
+        row-gap: 25px;
+        padding-bottom: 40px;
+    }
+    .footer .footer_wrap .fot_box {
+        width: 50%;
+    }
+/* ==========================991px end====================== */ 
+}
+
+/* ==========================767px start====================== */
+@media only screen and (max-width: 767px) {
+    .baner {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .baner .baner_cont h1 {
+        font-size: 40px;
+    }
+    .baner .baner_cont h4 {
+        font-size: 18px;
+    }
+    .anous_bar .ans_wrap {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .anous_bar .ans_wrap .text h4 {
+        text-align: center;
+    }
+    .physio_service .physio_wrap .box .pys_cont {
+        padding: 20px 15px 0;
+    }
+    .why_vernca .wraper .part {
+        width: 50%;
+        text-align: center;
+    }
+    .customer_slider h1 {
+        margin-bottom: 50px;
+    }
+    .customer_slider .slider_wrap .sald_cont h4 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .customer_slider .slider_wrap .prev-arrow, .customer_slider .slider_wrap .next-arrow {
+        bottom: -40px;
+    }
+    .therapists .wraper {
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .therapists .wraper .box {
+        width: 50%;
+    }
+    .news .news_wrap .news_box {
+        width: 50%;
+    }
+    .news .news_wrap .news_box .news_cont h4 {
+        margin-bottom: 10px;
+    }
+/* ==========================767px end====================== */ 
+}
+
+/* ==========================575px start====================== */
+@media only screen and (max-width: 575px) {
+    .baner .baner_cont {
+        text-align: center;
+    }
+    .physio_service .physio_wrap .box {
+        width: 100%;
+    }
+    .why_vernca .wraper .part {
+        width: 100%;
+    }
+    .therapists .wraper .box {
+        width: 100%;
+    }
+    .news .news_wrap .news_box {
+        width: 100%;
+    }
+    .footer .footer_wrap .fot_box ul li {
+        margin-bottom: 5px;
+    }
+    .footer .footer_wrap .fot_box {
+        width: 100%;
+        text-align: center;
+    }
+    .footer .footer_wrap .fot_box .logo {
+        margin: 0 auto;
+    }
+    .footer .footer_wrap .fot_box .ftr_icon {
+        justify-content: center;
+    }
+/* ==========================575px end====================== */ 
+}
+
+/* ==========================480px start====================== */
+@media only screen and (max-width: 480px) {
+    .baner {
+        padding-top: 35px;
+    }
+    .baner .baner_cont h1 {
+        font-size: 36px;
+    }
+    .baner .baner_cont a, .baner .baner_cont a:last-child {
+        font-size: 15px;
+        padding: 8px 26px;
+    }
+    .baner .baner_cont a:last-child {
+        margin-left: 5px;
+    }
+    .physio_service .physio_wrap .box_1 .box1_cont {
+        border: 2px solid #cfcfcfd1;
+    }
+    .physio_service .physio_wrap .box_1 .box1_cont h2 {
+        font-size: 26px;
+    }
+    .why_vernca h1 {
+        font-size: 26px;
+    }
+    .customer_slider h1 {
+        font-size: 26px;
+    }
+    .customer_slider .slider_wrap .prev-arrow, .customer_slider .slider_wrap .next-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+    .customer_slider .slider_wrap .prev-arrow {
+        transform: translateX(-35px);
+    }
+    .customer_slider .slider_wrap .next-arrow {
+        transform: translateX(35px);
+    }
+    .therapists h1 {
+        font-size: 26px;
+    }
+    .news h1 {
+        font-size: 26px;
+    }
+    .footer .copy_right {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        row-gap: 10px;
+    }
+    .footer .copy_right p {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+/* ==========================480px end====================== */ 
+}
